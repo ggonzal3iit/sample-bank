@@ -1,0 +1,35 @@
+- user interface
+    - "Hello, welcome to Sample Bank"
+    - "Main menu":
+        - create new account
+            - checking
+                - input information, output account ID
+            - savings
+                - input information, output account ID
+        - access existing account
+            - enter account number
+                - "Welcome to your account"
+                    - deposit
+                    - withdraw
+                    - check balance
+
+- classes
+    - Customer
+        - customer id
+        - name
+    - BankAccount (superclass)
+        - account id / account number
+        - Customer
+        - deposit()
+        - withdraw()
+        - annual fee
+        - interest rate
+        - balance
+        - addInterest()
+        - chargeAnnualFee()
+    - CheckingAccount (subclass)
+    - SavingsAccount (subclass)
+
+
+- for later
+    - can't withdraw below 0 (or custom threshold)
