@@ -35,7 +35,7 @@ public abstract class BankAccount {
         int balance = 0;
         switch (accountTypeCode) {
             case 1:
-                bankAccount = new CheckingAccount(id, annualFee, interestRate, balance);
+                bankAccount = new CheckingAccount(id, balance);
                 return bankAccount;
             case 2:
                 bankAccount = new SavingsAccount(id, annualFee, interestRate, balance);
